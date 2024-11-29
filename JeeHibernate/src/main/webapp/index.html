@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tap Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f8ff, #d8e2f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  padding: 20px 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  border-color: #5b9bd5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(91, 155, 213, 0.5);
+}
+
+button {
+  background-color: #5b9bd5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4a8ace;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+textarea {
+  resize: none;
+}
+
+</style>
+<body>
+  <div class="form-container">
+    <h1>Tap Student Registration Form</h1>
+    <form action="register" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phonenumber" placeholder="Enter your phone number" required>
+      
+      <label for="address">Address</label>
+      <textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="cpassword" placeholder="Confirm your password" required>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
